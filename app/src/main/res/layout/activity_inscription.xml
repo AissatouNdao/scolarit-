@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InscriptionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="-169dp"
+        tools:layout_editor_absoluteY="76dp">
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonSignup"
+            android:layout_marginTop="16dp"
+            android:text="Retour" />
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="Nom"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="376dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewName"
+            android:layout_marginTop="8dp"
+            android:hint="Entrez votre nom" />
+
+        <TextView
+            android:id="@+id/textViewLastName"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_below="@id/editTextName"
+            android:layout_marginTop="16dp"
+            android:text="Prénom"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewLastName"
+            android:layout_marginTop="8dp"
+            android:hint="Entrez votre prénom" />
+
+        <TextView
+            android:id="@+id/textViewAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextLastName"
+            android:layout_marginTop="16dp"
+            android:text="Adresse"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewAddress"
+            android:layout_marginTop="8dp"
+            android:hint="Entrez votre adresse" />
+
+        <TextView
+            android:id="@+id/textViewPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextAddress"
+            android:layout_marginTop="16dp"
+            android:text="Téléphone"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewPhone"
+            android:layout_marginTop="8dp"
+            android:hint="Entrez votre numéro de téléphone"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextPhone"
+            android:layout_marginTop="16dp"
+            android:text="Email"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewEmail"
+            android:layout_marginTop="8dp"
+            android:hint="Entrez votre adresse email"
+            android:inputType="textEmailAddress" />
+
+        <Button
+            android:id="@+id/buttonSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextEmail"
+            android:layout_marginTop="24dp"
+            android:text="S'inscrire" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
